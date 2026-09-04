@@ -1,9 +1,14 @@
-global with sharing class DreamHouseSampleDataController {
+Public without sharing class DreamHouseSampleDataController {
 
-    @RemoteAction
-    global static void deleteAll() {
-        DELETE [SELECT ID FROM property__c];    
-        DELETE [SELECT ID FROM broker__c]; 
+    public static void deleteAll() {
+        DELETE [SELECT ID FROM property__c];
+        DELETE [SELECT ID FROM broker__c];
         ////TEST COMMENT
-    }    
+        Account objAcc= [Select id from Account limit 1];
+        if(true){
+            Integer i =0 ;
+            Integer THISISWRONGVAR ;
+            System.debug('TEST');
+        }
+    }
 }
