@@ -1,6 +1,7 @@
 Public without sharing class DreamHouseSampleDataController {
 
     public static void deleteAll() {
+        Integer ITSINTEGER =0;
         DELETE [SELECT ID FROM property__c];
         DELETE [SELECT ID FROM broker__c];
         ////TEST COMMENT
@@ -10,5 +11,6 @@ Public without sharing class DreamHouseSampleDataController {
             Integer THISISWRONGVAR ;
             System.debug('TEST');
         }
+        System.debug('TEST');
     }
 }
